@@ -7,28 +7,89 @@
 </head>
 
 <!-- CSS External File-->
-<link rel="stylesheet" href="dd/style.css">
+<link rel="stylesheet" href="css/style.css">
+
+<!-- Tailwind CDN-->
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
 
 <body>
-    <!-- Header Section-->
-    <header> 
-        <div class="main-logo"></div> 
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">About Me</a>
-            <a href="#">Portofolio</a>
-            <a href="#">Contact Me</a>
-            
-    </header>
+
+    <main>
+        <!-- Header content-->
+        <header class="main-header p-[10px]"> 
+            <!--logo content-->
+            <div class="main-logo"></div> 
+
+            <!--navigation content-->
+            <nav class="flex gap-1">
+                <a class="border rounded p-2" href="#home-page">Home</a>
+                <a class="border rounded p-2" href="#profile-page">About Me</a>
+                <a class="border rounded p-2" href="#portofolio-page">Portofolio</a>
+                <a class="border rounded p-2" href="#contactme-page">Contact Me</a>
+            </nav>
+                
+        </header>
+
+        <hr/>
+        <section id="home-page" class="profile-section p-[20px] min-h-[600px]">
+            <h1 class="text-3xl font-bold mb-4"><span id="greet-name"></span> Welcome to My Portofolio</h1>
+            <p class="mb-2">Hello! I'm Thoyib, a passionate web developer with a knack for creating dynamic and user-friendly websites. With a background in computer science and a love for coding, I specialize in front-end development using HTML, CSS, and JavaScript. When I'm not coding, you can find me exploring the latest tech trends or working on personal projects to enhance my skills.</p>
+        </section>
+        <hr/>
+        
+        <!-- our profile -->
+        <section id="profile-page" class="profile-section p-[20px] min-h-[600px]">
+            <h1 class="text-3xl font-bold mb-4">Thoyib Ardian</h1>
+            <p class="mb-2">Hello! I'm Thoyib, a passionate web developer with a knack for creating dynamic and user-friendly websites. With a background in computer science and a love for coding, I specialize in front-end development using HTML, CSS, and JavaScript. When I'm not coding, you can find me exploring the latest tech trends or working on personal projects to enhance my skills.</p>
+        </section>
+        <hr/>
+        
+        <!-- portofolio -->
+        <section id="portofolio-page" class="portofolio-section p-[20px] min-h-[600px]">
+            <h2 class="text-2xl font-semibold mb-4">Portofolio</h2>
+            <ul class="list-disc list-inside">
+                <li class="mb-2">Project 1: E-commerce Website - Developed a fully functional e-commerce website with a user-friendly interface and secure payment gateway.</li>
+                <li class="mb-2">Project 2: Personal Blog - Created a responsive personal blog platform with dynamic content management features.</li>
+                <li class="mb-2">Project 3: Portfolio Website - Designed and developed my own portfolio website to showcase my projects and skills.</li>
+            </ul>
+        </section>
+        <hr/>       
+
+        <!-- contact me -->
+        <section id="contactme-page" class="contact-section p-[20px] min-h-[600px]">
+            <h2 class="text-2xl font-semibold mb-4">Contact Me</h2>
+            <p class="mb-2">If you'd like to get in touch, feel free to reach out via email at </p>
+
+            <form>
+                <label for="name" class="block mb-2">Name:</label>
+                <input type="text" id="name-input" name="name" class="border p-2 mb-4 w-[60%]" required/>
+
+                <label for="email" class="block mb-2">Email:</label>
+                <input type="email" id="email-input" name="email" class="border p-2 mb-4 w-[60%]" required/>
+
+                <label for="message" class="block mb-2">Message:</label>
+                <textarea id="message-input" name="message" class="border p-2 mb-1 w-full" rows="4" required></textarea>
+
+                <button onclick= "validateForm()"; class="block mb-8 bg-blue-500 text-white px-4 py-2 rounded">Send Message</button>
+
+
+            </form>
+        </section>
+    </main>
 
 
 
 
-    <!-- Main Section-->  
-    <main> </main>
 
     <!-- Footer Section-->
-    <footer>   </footer>
+    <footer>
+        <div class="text-center p-4 bg-gray-300">
+        <p class="text-center p-4 bg-gray-200">© 2025 Thoyib's Portofolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+
 
     <!-- JS External File-->
     <script src="js/script.js"></script> 

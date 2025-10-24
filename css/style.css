@@ -1,0 +1,14 @@
+.main-logo  {
+   width: 90px;
+    height: 90px;
+    background-color: purple;
+    border-radius: 60%;
+    background-image: url(https://hips.hearstapps.com/hmg-prod/images/eminem-a-k-a-marshall-bruce-mathers-iii-attends-a-ceremony-news-photo-1698936282.jpg?crop=1.00xw:0.667xh;0,0.0380xh&resize=1400:*);
+    background-size: contain;  
+}
+.main-header {
+    display: flex
+;
+    justify-content: space-between;
+    align-items: center;
+}
